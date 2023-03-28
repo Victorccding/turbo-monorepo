@@ -10,7 +10,7 @@ applications:
           commands:
             - npx turbo run build --filter=nextjs-app
       artifacts:
-        baseDirectory: apps/app/.next
+        baseDirectory: apps/nextjs-app/.next
         files:
           - '**/*'
       cache:
