@@ -8,7 +8,7 @@ applications:
             - pnpm install --no-frozen-lockfile
         build:
           commands:
-            - npx turbo run build --filter=app
+            - npx turbo run build --filter=nextjs-app
       artifacts:
         baseDirectory: apps/app/.next
         files:
