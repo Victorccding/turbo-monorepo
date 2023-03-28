@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Layout, Page, Text, List, Code } from '@vercel/examples-ui'
 import { Button } from '@acme/ui'
 import { matchingTextColor, randomColor } from '@acme/utils'
+import { Greeting } from '@project/libs'
 
 export default function Index() {
   const [bgColor, setBgColor] = useState('')
@@ -16,6 +17,7 @@ export default function Index() {
 
   return (
     <Page>
+      <Greeting />
       <Text variant="h1" className="mb-6">
         Monorepo
       </Text>
